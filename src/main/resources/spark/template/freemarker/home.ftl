@@ -6,11 +6,11 @@
   <form action="/userinfo" method="post">
   <div>
     <label>Nombre</label>
-    <input type="text" name="nombre/"
+    <input type="text" name="nombre" />
   </div>
   <div>
     <label>Apellido</label>
-    <input type="text" name="apellido/"
+    <input type="text" name="apellido"/>
     </div>
     <button type="submit"> Enviar </button>
   </form>

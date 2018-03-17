@@ -1,6 +1,25 @@
 <html>
-	<body>
-		<form action="/contact" method="post">
+<head>
+<#include "./header.ftl">
+<link rel="stylesheet" href="css/form.css" type="text/css"/>
+<title>Chef Pepper Contact</title>
+</head>
+<body>
+    	<header>
+		<div class="contenedor">
+			<nav class="menu">  
+                            <img src="img/logo.png" width=200 height=100>
+			    			<a href="#" id="btn-menu">Menu</a>
+                       	    <a href="#" id="btn-acerca-de">Nosotros</a>
+                            <a href="#" id="btn-galeria">Galeria</a>
+                            <a href="#" id="btn-ubicacion">Ubicacion</a>
+                            <a href="formu.html" id="btn-contacto">Login</a>
+			</nav>
+		</div>
+	</header>
+    <section class="main"> 
+    
+		<form action="/login" method="post">
 			<div>
 				<label>Nombre</label>
 				<input type="text" name="nombre" />
@@ -12,5 +31,44 @@
 			
 			<button type="submit"> Log in </button>
 		</form>
-	</body>
+	
+		</div>
+    
+ 
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+		<h3 class="titulo">Ubicacion</h3>
+                    <div class="direccion">
+			<p class="calle">República Dominicana<br />Ave. 27 de febrero,Santiago de Los Caballeros 51000</p><br>
+			<p class="telefono">(809) 565-4068</p>
+			<p class="correo">chef@pepper.com</p>
+                    </div>
+
+                    <div class="horarios">
+			<h4>Horarios</h4>
+                            <p class="entre-semana">Lunes a Viernes <br> 8:00am - 9:00pm</p>
+                            <p class="fin-semana">Sabados y Domingos <br> 11:00am - 11:00pm</p>
+			</div>
+            </div>
+	</section>
+
+		<section class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8852093318733!2d-70.69189188509291!3d19.460515386868426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1c58b98bc53c5%3A0x31f512aea3b2d6ea!2sChef+Pepper!5e0!3m2!1ses!2sdo!4v1518279922038" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</section>
+ </section>
+	
+
+	<footer>
+		<div class="contenedor">
+			<div class="copyright">
+				<p>Copyright Chef Pepper @ 2018</p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/archivo.js"></script>
+	<script type="text/javascript" src="js/parallax_fx.js"></script>
+	
+</body>
 </html>
